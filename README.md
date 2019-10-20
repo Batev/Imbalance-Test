@@ -1,6 +1,6 @@
 # Training with balanced and imbalanced data using the [xai](https://github.com/EthicalML/xai) toolbox
 
-A comparison between a KNN-Classifier trained with balanced and imbalanced data using the[Census Income Data Set](https://archive.ics.uci.edu/ml/datasets/census+income) to predict weather a person makes over 50K a year.
+A comparison between a KNN-Classifier trained with balanced and imbalanced data using the [Census Income Data Set](https://archive.ics.uci.edu/ml/datasets/census+income) to predict weather a person makes over 50K a year.
 
 This project consists of three main modules: **compare_models.py**, **train_balanced_model.py**, **train_imbalanced_model.py**.
 
@@ -18,7 +18,7 @@ This project consists of three main modules: **compare_models.py**, **train_bala
 
 ## Results
 
-When we analyze the raw data we could see that there are a lot more Male examples that earn >50K a year than the Female:
+When we analyze the raw data we could see that there are a lot more *Male* examples that earn *>50K* a year than the *Female*:
 ![raw_data](img/b_1.png)
 
 Therefore, we will balance the data for the balanced example:
@@ -26,22 +26,22 @@ Therefore, we will balance the data for the balanced example:
 
 After training the classifiers with both balanced and imbalanced data, the following results were achieved:
 
-```python
+```bash
 # Balanced data
 $> 20-Oct-19 16:51:24 - Accuracy for the model is 0.7333333333333333
 # Imbalanced data
 $>20-Oct-19 16:52:33 - Accuracy for the model is 0.8403193612774451
 ```
 
-Confusion matrix for the "balanced" model:
+Confusion matrix for the *"balanced"* model:
 ![cof_mat_b](img/b_3.png)
 
-Confusion matrix for the "imbalanced" model:
+Confusion matrix for the *"imbalanced"* model:
 ![cof_mat_imb](img/imb_3.png)
 
 > Additional plots such as ROCs could be found in the *img/* folder.
 
-For manual testing purposes I have generated random examples and compared the predictions of both models. It is noticeable that the "imbalanced" model slightly (5 out of 500) disadvantages *female* examples:
+For manual testing purposes I have generated random examples and compared the predictions of both models. It is noticeable that the *"imbalanced"* model slightly (5 out of 500) disadvantages *Female* examples:
 
 ```
 Person 5:
